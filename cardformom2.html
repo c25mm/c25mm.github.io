@@ -3,18 +3,32 @@
 <head>
 	<h1>HAPPY BIRTHDAY MOM!!!</h1>
 
-
+<style type="text/css">
+#confetti{
+	width: 100%;
+	height: 100%;
+	background-image: url(https://www.funimada.com/assets/images/cards/big/bday-484.gif)
+}
+</style>
+<div id=confetti></div>
 
 	<script type="text/javascript">
-	document.getElementById("confetti").onclick = function() {myFunction()};
-function myFunction() {
-  document.getElementById("confetti").innerHTML = "url(https://i.pinimg.com/originals/a4/6b/ad/a46bad863c5476d631c2d218289d5a4e.gif)";
-}
+	var celebration = "document"
+
+	function makeConfetti () {
+
+	printThis (celebration.style.opacity="1")
+	}
+
+	document.addEventListener("click", makeConfetti)
 
 	</script>
 	
 	
 <style type="text/css">
+
+
+
 	body {
   background-image: url(https://c.tenor.com/OIOYMunMcy0AAAAM/rain-balloons.gif);
   background-size: cover;
