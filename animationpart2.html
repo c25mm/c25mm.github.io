@@ -3,35 +3,67 @@
 <head>
 	<title></title>
 </head>
+
 <body>
-
+<h1>   Hello, welcome to the Imdontai page</h1>
+<a href="info.html">Click on this link to get to Imdontai's bio</a>
+<embed src="polo.mp3"></embed>
 <style type="text/css">
-div{
-	width: 100px;
-	height: 100px;
-	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuI-Ypq5L3PYOdLDf0NV9MQij9xQwKM5XiXA&usqp=CAU);
-	position: relative;
-	background-size: cover;
-	animation-name: moveup;
-	animation-duration: infinite; 
+h1{
+	font-size:30px;
+	text-align: center;
+	color: gray;
 }
-@keyframes moveup {
-	from {top: 200px;}
-	to {top: 0px;}
+a{
+	text-align: center;
+	color: gray;
 }
-
-#imdontai 
-{width: 400px;
-	height: 400px;
+body{
+background-image: url(download-1.jpg);
+background-size: cover;
+background-position: center;
+transform:scale(1);
+}
+#imdontai1{
+width: 450px;
+	height: 450px;
 	background-image: url(https://c.tenor.com/1zP1p7oih2gAAAAd/trarags-red-shirt.gif);
-	position: relative;
+	background-size:cover;
 	animation-name: trarags;
 	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	position:absolute;
 }
-</style>
+#imdontai2{
+	width: 450px;
+	height: 450px;
+	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuI-Ypq5L3PYOdLDf0NV9MQij9xQwKM5XiXA&usqp=CAU);
+	position: absolute;
+	background-size: cover;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-name: moveup;
+}
 
-<div></div>
-<div class="imdontai"></div>
+@keyframes trarags {
+from {
+	top: 300px;
+	left: 50px;
+}
+to {top:100px;
+	right: 0px;}
+}
+
+@keyframes moveup {
+from	{top:0px;right:50px;}
+to {top:400px;left:100px;}
+
+}
+
+
+</style>
+<div id="imdontai1"></div>
+<div id="imdontai2"></div>
 
 </body>
 </html>

@@ -12,7 +12,7 @@ div{
 	background-image: url(https://c.tenor.com/1zP1p7oih2gAAAAd/trarags-red-shirt.gif);
 	position: relative;
 	animation-name: trarags;
-	animation-duration: 5s;
+	animation-duration: infinite;
 }
 div{
 	width: 400px;
@@ -20,28 +20,19 @@ div{
 	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuI-Ypq5L3PYOdLDf0NV9MQij9xQwKM5XiXA&usqp=CAU);
 	position: relative;
 	background-size: cover;
-	animation-name: moveup;
-	animation-duration: infinite; 
 	background-position: right;
 	left: 500px;
+	animation: moveup 2s infinite;
 }
 @keyframes trarags {
-  from {top: 0px;}
+  from {top: 200px;}
   to {top: 200px;right: 400px}
+
 
 	}
 @keyframes moveup {
-	from {top: 200px;right: 300px}
-	to {top: 0px;left: 150px}
-}
-
-#imdontai 
-{width: 400px;
-	height: 400px;
-	background-image: url(https://c.tenor.com/1zP1p7oih2gAAAAd/trarags-red-shirt.gif);
-	position: relative;
-	animation-name: trarags;
-	animation-duration: 5s;
+	from {top: 200px;right: 300px;}
+	to {top: 0px;left: 150px;}
 }
 </style>
 
