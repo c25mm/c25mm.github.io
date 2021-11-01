@@ -13,7 +13,7 @@ h1{
 	color: green;
 	font-weight: 900;
 }
-p{
+#writing{
 	font-size: 20px;
 	text-align: center;
 	color: #505050;
@@ -32,6 +32,16 @@ div{
 	}
 }
 </style>
+<div class="writing"></div>
+<script type="text/javascript">
+	var writing = document.getElementByID("writing")
+
+	function changeColor () {
+		writing.syle.color = "blue"
+
+	}
+
+</script>
 <div></div>
 </body>
 </html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<style type="text/css">
+
+#jidion{
+height: 300px;
+width: 300px;
+background-size: cover;
+background-image: url(jid.jpg);
+}
+	
+#flight{
+height: 400px;
+width: 400px;
+background-size: cover;
+background-image: url(tongue.jpg);
+background-position: center;
+margin-left: 500px;
+margin-bottom: 200px;
+	}
+</style>
+
+	<div id="jidion"></div>
+	<div id="flight" onclick="myFunction()">CLICK ME</div>
+	<script type="text/javascript">
+		function myFunction(){
+			document.getElementById("flight").innerHTML = "Click around this website for more javascript features!";
+		}
+		var smile = document.getElementById("jidion");
+		smile.addEventListener("click", setInterval(function() {
+			this.style.transform = "rotate(40deg)";
+
+			},3000 );
+		myFunction
+		
+		
+	</script>
+
+</body>
+</html>
