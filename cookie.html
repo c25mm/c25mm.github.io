@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<style type="text/css">
+	h1 {
+	font-size: 40px;
+	text-align: center;
+
+}
+
+</style>
+<h1>Click to see Unknown P</h1>
+<script type="text/javascript">
+	function makeCookie () {
+		var cookie = document.createElement("div")
+		document.body.appendChild(cookie);
+		
+			cookie.style.height = "200px";
+			cookie.style.width = "200px";
+			cookie.style.backgroundImage = "url(youtube.jpg)";
+			cookie.style.display ="inline-block";
+			
+			cookie.style.backgroundSize = "cover";
+			cookie.addEventListener("click", function (){
+			cookie.style.backgroundImage = "url(unknown.jpg)";
+			cookie.style.height = "200px";
+			cookie.style.width = "200px";
+
+		})
+		
+}
+setInterval(makeCookie, 100);
+
+function play(){
+       var audio = document.getElementById("audio");
+       audio.play();
+   }
+</script>
+<div></div>
+<audio id="audio" src="fire.mp3"></audio>
+<embed src="fire.mp3"></embed>
+</body>
+</html>
