@@ -22,6 +22,11 @@ background-position: center;
 margin-left: 500px;
 margin-bottom: 200px;
 	}
+body {
+	background-image: url(ttw.jpg);
+	background-size: cover;
+
+}
 </style>
 
 	<div id="jidion"></div>
@@ -35,7 +40,16 @@ margin-bottom: 200px;
 			this.style.transform = "rotate(40deg)";
 
 			} );
-		
+		function changeSize () {
+			var kenny = document.body
+			kenny.addEventListener ("click", function () {
+				kenny.style.backgroundImage = "url(twitch.jpg)";
+				kenny.style.backgroundSize = "200px"
+
+			})
+
+		}
+		setInterval(changeSize, 100);
 		
 	</script>
 
