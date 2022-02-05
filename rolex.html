@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+#moves{
+	height: 400px;
+	width: 600px;
+	background-size: cover;
+}
+	h1 {
+	font-size: 20px;
+	font-family: 'Fuzzy Bubbles', cursive;
+}
+
+	</style>
+	<h1>Random sounds array project (click for random song or dance)</h1>
+</head>
+<body>
+	<div id="moves"></div>
+	<audio controls id="sandwich" src=""></audio>
+
+
+<script type="text/javascript">
+	var song = document.getElementById('sandwich');
+	var nelson = document.getElementById('moves')
+
+
+
+	var hits = ["cortex.mp3", "fire.mp3", "polo.mp3"]
+	var dance = ["url(grub.gif)", "url(arms.gif)", "url(zemo.gif)"]
+
+
+function playAudioAndGif(){
+	var x = Math.round(Math.random()*2);
+
+	song.src = hits[x]
+	song.play();
+	console.log(hits[x])
+	nelson.style.backgroundImage = dance[x]
+
+
+}
+
+document.addEventListener("click", playAudioAndGif);
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
