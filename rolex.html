@@ -28,12 +28,12 @@
 
 
 
-	var hits = ["cortex.mp3", "fire.mp3", "polo.mp3"]
-	var dance = ["url(grub.gif)", "url(arms.gif)", "url(zemo.gif)"]
+	var hits = ["cortex.mp3", "fire.mp3", "polo.mp3", "return.mp3", "movie.mp3"]
+	var dance = ["url(grub.gif)", "url(arms.gif)", "url(zemo.gif)", "url(gru.gif)", "url(snoopy.gif)"]
 
 
 function playAudioAndGif(){
-	var x = Math.round(Math.random()*2);
+	var x = Math.round(Math.random()*5);
 
 	song.src = hits[x]
 	song.play();
