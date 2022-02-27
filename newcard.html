@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+	
+var listen = 0
+
+	function tellME(){
+		listen = listen + 1
+		console.log(listen)
+	}
+	
+document.addEventListener('click', tellME)
+
+function makeRed (){
+	var red = document.createElement("div")
+	document.body.appendChild(red)
+	red.style.height = "100px";
+	red.style.width = "100px";
+	red.style.backgroundImage = "url(tennis.jpg)"
+
+}
+
+function makePurple(){
+var purple = document.createElement("div")
+	document.body.appendChild(purple)
+	purple.style.height = "100px";
+	purple.style.width = "100px";
+	purple.style.backgroundImage = "url(mobley.jpg)"
+	}
+
+	
+
+// if (listen < 20) {
+// 	makeRed();
+// 	}
+
+//  if (listen > 20) {
+//  	makePurple();
+	
+// }
+
+
+	
+</script>
+
+
+</body>
+</html>

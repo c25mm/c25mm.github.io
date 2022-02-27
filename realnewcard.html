@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+	</title>
+</head>
+<body>
+
+<style type="text/css">
+	
+	h3 {
+  text-decoration: underline;
+  font-family: 'Amatic SC', cursive;
+ text-align: center;
+  }
+</style>
+<h3>Happy Birthday Vihaan! Click for surprises!</h3>
+<script type="text/javascript">
+	
+var listen = 0
+
+
+	
+document.addEventListener('click', 
+
+	function tellME(){
+		listen = listen + 1;
+		console.log(listen);
+
+		if (listen<8)
+		{makePurple();}
+
+	else if (listen>8)
+		{makeRed()}
+} // closes function//
+) //closes event listener?/
+
+function makeRed (){
+	var red = document.createElement("div")
+	document.body.appendChild(red)
+	red.style.height = "400px";
+	red.style.width = "400px";
+	red.style.backgroundSize = "cover";
+	red.style.backgroundImage = "url(tennis.jpg)"
+	red.style.display ="inline-block";
+
+
+
+}
+
+
+function makePurple(){
+var purple = document.createElement("div")
+	document.body.appendChild(purple)
+	purple.style.height = "300px";
+	purple.style.width = "300px";
+	purple.style.backgroundSize = "cover";
+	purple.style.backgroundImage = "url(mobley.jpg)"
+	purple.style.display ="inline-block";
+	var gray = document.createElement("div")
+	document.body.appendChild(gray)
+	gray.style.height = "400px";
+	gray.style.width = "400px";
+	gray.style.backgroundSize = "cover";
+	gray.style.backgroundImage = "url(ring.jpg)"
+	gray.style.display ="inline-block";
+	
+
+
+
+
+	}
+	
+
+
+
+
+
+
+
+
+
+	
+</script>
+
+
+</body>
+</html>
