@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+<body>
+	Mouhamed word generator
+<div id="words"></div>
+<div id="pictures"></div>
+<style>
+	body{
+		font-family: 'Fredoka One', cursive;
+		text-align: center;
+	}
+#words{
+	height: 200px;
+	width: 200px;
+	margin-left: 35%;
+	color: blue;
+	font-size: 50px;
+	margin-top: 10px;
+}
+#pictures{
+	height: 500px;
+	width: 400px;
+	background-size: cover;
+	background-position: center; 
+	margin-left: 480px;
+	margin-bottom: 400px;
+}
+
+</style>
+
+<script type="text/javascript">
+	var lyrics = ["oh nah", "thats crazy", "OD?", "word?", "graah graah boo!","thats tuff", "really?", "Ima slap you", "Im 6'5","Im not playin","Whaaat", "You tweakin"]
+	var images = ["url(IMG-1031.JPG)", "url(IMG-1061.JPG)", "url(IMG-1036.JPG)", "url(IMG-1035.JPG)","url(IMG-1124.JPG)", "url(IMG-1191.JPG)", "url(moham.JPG)", "url(IMG-1032.jpg)", "url(IMG-1034.JPG)", "url(IMG-1192.JPG)"]
+
+	function playLyrics () {
+		var x = Math.floor(Math.random()*11)
+		var y = Math.floor(Math.random()*8)
+		words.innerText = lyrics[x]
+		pictures.style.backgroundImage = images[y]
+
+
+
+	}
+	setInterval(playLyrics, 1000)
+
+
+
+
+
+
+	</script>
+
+</body>
+</html>
